@@ -46,8 +46,6 @@ jobs:
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
           project-token: ${{secrets.CODACY_PROJECT_TOKEN=0d2bd1771ba34da69b4087234d3ccbae}}
-  
-          api-token: ${{secrets.CODACY_API_TOKEN=vAVIT2jc2OSC6dNHG411}}
     
           coverage-reports: ''
     # Optionally force associating a language with your coverage report
