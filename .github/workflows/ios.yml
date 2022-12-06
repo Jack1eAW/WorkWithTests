@@ -48,6 +48,6 @@ jobs:
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
            project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-           coverage-reports: ''
+           coverage-reports: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <WorkWithTest>
            language: ''
            force-coverage-parser: ''
