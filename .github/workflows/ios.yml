@@ -45,19 +45,17 @@ jobs:
       - name: Swift Coverage Conversion
   # You may pin to the exact commit or the version.
   # uses: sersoft-gmbh/swift-coverage-action@27bb5b2e82045cb4eff4fb3ab47c3a1b9cfdf4e0
-  uses: sersoft-gmbh/swift-coverage-action@v3.0.1
-  with:
+        uses: sersoft-gmbh/swift-coverage-action@v3.0.1
+        with:
     # A list of search paths (one per line) that should be used for searching coverage data.
-    search-paths: # default is ./.build
-$HOME/Library/Developer/Xcode/DerivedData
-
+        search-paths: # default is ./.build
     # The path to the output folder to put the converted coverage files in.
-    output: # default is ./.swiftcov
+        output: # default is ./.swiftcov
     # The format to write the coverage files in. Can be 'lcov' or 'txt'.
-    format: # default is lcov
+        format: # default is lcov
     # A regular expression that is used to filter coverage files by their target names.
-    target-name-filter: # optional
+        target-name-filter: # optional
     # If `true`, conversion failures are ignored. If `fail-on-empty-output` is also set to `true`, the action might still fail if all conversions fail.
-    ignore-conversion-failures: # default is false
+        ignore-conversion-failures: # default is false
     # If `true`, the action fails if no coverage files were found (output is still set to an empty array).
-    fail-on-empty-output: # default is false
+        fail-on-empty-output: # default is false
