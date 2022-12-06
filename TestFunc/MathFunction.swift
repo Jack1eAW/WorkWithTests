@@ -9,8 +9,9 @@ import Foundation
 
 class Function {
     
-    func ResultOfFunction(x: Double) -> Double {
-        return pow(x, 3.0) * cos(x) - exp(2*x)
+    func ResultOfFunction(x: Float) -> Float {
+        let y = (pow(x, 3) * cos(x) - exp(2*x)).rounded()
+        return y
     }
 }
 
